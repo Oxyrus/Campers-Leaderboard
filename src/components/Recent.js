@@ -9,7 +9,7 @@ export default class Recent extends Component {
       return (<h1>Loading...</h1>);
     }
     return (
-      <section>
+      <div className="main">
         <h1 className="center-align white-text">Recent Time Leaderboard</h1>
           <div className="center-align">
             <Link to="/" className="waves-effect waves-light btn-large">All Time</Link>
@@ -20,7 +20,7 @@ export default class Recent extends Component {
             return <User key={user.username} rank={index+1} user={user} />
           })}
         </div>
-      </section>
+      </div>
     )
   }
 }
